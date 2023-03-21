@@ -3,13 +3,11 @@
 /**
  * print_alphabet - entry point
  *
- * Return: 0 (success)
- *
  */
 
 void print_alphabet(void)
 {
-	char alpha;
+	int  alpha;
 
 	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
@@ -17,5 +15,4 @@ void print_alphabet(void)
 	}
 
 	_putchar('\n');
-	return (0);
 }
