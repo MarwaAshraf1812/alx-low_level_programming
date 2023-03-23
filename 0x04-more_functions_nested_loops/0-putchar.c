@@ -1,9 +1,12 @@
 #include "main.h"
+
 /**
- * main - main function
- * _putchar: print the alphabets putchar
- * Return: always 0
+ * main - Write a program that prints all single digit numbers of base 10
+ *
+ * Return: 0 (success)
+ *
  */
+
 int main(void)
 {
 	_putchar('_');
@@ -15,5 +18,6 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
+
 	return (0);
 }
