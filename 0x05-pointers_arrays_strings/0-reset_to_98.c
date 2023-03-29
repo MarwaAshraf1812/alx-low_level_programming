@@ -1,9 +1,13 @@
 #include "main.h"
+
 /**
- * reset_to_98 - update the value to 98
- * @n: parametre
- */
+ * reset_to_98 - Entry point.
+ *
+ * @n: pointer
+ *
+*/
+
 void reset_to_98(int *n)
 {
-	*n = 98;
+*n = 98;
 }
