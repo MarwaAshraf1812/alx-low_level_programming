@@ -12,7 +12,7 @@ int _strlen(char *s)
 
 	for (; s[size] != '\0'; size++)
 	;
-	return (0);
+	return (size);
 }
 /**
  * str_concat - function that concatenates two strings
