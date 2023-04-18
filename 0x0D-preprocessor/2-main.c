@@ -7,6 +7,6 @@
 
 int main(void)
 {
-	pritf("%s\n", _FILE_);
+	pritf("%s\n",  __FILE__);
 	return (0);
 }
