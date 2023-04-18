@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 /**
  * main - functon that prints name of file
