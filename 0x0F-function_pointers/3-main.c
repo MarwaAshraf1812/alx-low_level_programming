@@ -1,10 +1,3 @@
-#include "3-calc.h"
-/**
- * main - performs simple operation
- * @argc: number of arguments
- * @argv: array of argument
- * Return: 0
- */
 int main(int argc, char *argv[])
 {
 	register int a, b;
@@ -26,3 +19,4 @@ int main(int argc, char *argv[])
 	printf("%i\n", fp(a, b));
 	return (0);
 }
+
