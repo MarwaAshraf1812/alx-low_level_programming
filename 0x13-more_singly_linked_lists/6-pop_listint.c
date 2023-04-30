@@ -20,6 +20,7 @@ int pop_listint(listint_t **head)
 	i = (*head)->n;
 	current = (*head)->next;
 	free(*head);
+	*head = current;
 
 	return (i);
 }
