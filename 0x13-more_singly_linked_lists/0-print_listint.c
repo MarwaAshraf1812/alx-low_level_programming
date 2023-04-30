@@ -6,9 +6,9 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	size_t p;
+	size_t p = 0;
 
-	for (p = 0; h; P++)
+	while (h)
 	{
 		printf("%d\n", h->n);
 		p++;
