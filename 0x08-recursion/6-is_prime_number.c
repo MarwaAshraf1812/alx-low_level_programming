@@ -13,7 +13,7 @@ int is_prime_helper(int n, int div)
 		return (n == 2);
 	if (n % div == 0)
 		return (0);
-	if (div > n/2)
+	if (div > n / 2)
 		return (1);
 	return (is_prime_helper(n, div + 1));
 }
