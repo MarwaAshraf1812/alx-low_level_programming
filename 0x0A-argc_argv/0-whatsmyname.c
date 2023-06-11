@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * main - function main
  * @argc: counter
@@ -9,6 +8,6 @@
 int main(int argc, char *argv[])
 {
 	if (argc > 0)
-		printf("%s \n", argv[0]);
-	exit(EXIT_SUCCESS);
+		printf("%s\n", argv[0]);
+	return (0);
 }
