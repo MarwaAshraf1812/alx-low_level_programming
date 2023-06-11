@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * main - function main
+ * @argc: counter
+ * @argv: array of arguments
+ * Return: 0 on success
+ */
+int main(int argc, char *argv[])
+{
+	if (argc > 1)
+		printf("%s \n", argv[0]);
+	exit(EXIT_SUCCESS);
+}
