@@ -17,13 +17,11 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	table->size = size;
 	hash_node_t *bucket = malloc(sizeof(hash_node_t) * size);
-
-	{
-		if (bucket == NULL)
+	
+	if (bucket == NULL)
 	{
 		free(table);
 		return (NULL);
 	}
-	table->array = bucket;
 	return (table);
 }
