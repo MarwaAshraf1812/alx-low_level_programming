@@ -21,11 +21,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new_node = malloc(sizeof(new_node));
 	if (new_node == NULL)
 		return (0);
-	cpy_k = (char*)malloc(strlen(key) + 1);
+	cpy_k = (char *)malloc(strlen(key) + 1);
 	strcpy(cpy_k, key);
 	if (value != NULL)
 	{
-		cpy_v = (char*)malloc(strlen(value) + 1);
+		cpy_v = (char *)malloc(strlen(value) + 1);
 		strcpy(cpy_v, value);
 	}
 	new_node->key = cpy_k;
