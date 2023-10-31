@@ -29,6 +29,6 @@ def island_perimeter(grid):
                     edges += 1
                 if j >= width - 1 or not grid[i][j + 1]:
                     edges += 1
-                if j >= height - 1 or not grid[i + 1][j]:
+                if i >= height - 1 or not grid[i + 1][j]:
                     edges += 1
     return edges
