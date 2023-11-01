@@ -17,8 +17,10 @@ clean:
 	$(RM) *~ $(NAME)
 
 oclean:
-	$(RM) $(NEW)
+	$(RM) $(OBJ)
 
 fclean: clean oclean
 
 re: fclean all
+
+PHONY: all clean oclean fclean re
