@@ -1,7 +1,6 @@
 CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
-NEW = $(OBJ)
 NAME = school
 RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
@@ -10,8 +9,9 @@ ifeq ($(wildcard m.h),)
 $(error Header file m.h is missing) 
 endif
 
-all: $(NEW)
-	$(CC)  $(CFLAGS) $(NEW) -o $(NAME)
+all: $(NAME)
+$(NAME): $(OBJ)
+	$(CC)  $(CFLAGS)  -o $@ $(NAME)
 
 clean:
 	$(RM) *~ $(NAME)
